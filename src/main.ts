@@ -1,8 +1,8 @@
 import Koa from 'koa';
+import serve from 'koa-static';
 const app = new Koa();
 
 // logger
-
 app.use(async (ctx, next) => {
     await next();
     const rt = ctx.response.get('X-Response-Time');
@@ -19,9 +19,6 @@ app.use(async (ctx, next) => {
 });
 
 // response
-
-app.use(async ctx => {
-    ctx.body = 'Hello World';
-});
+app.use(serve('wwwroot'));
 
 app.listen(3000);
