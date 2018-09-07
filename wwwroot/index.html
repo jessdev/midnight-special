@@ -1,14 +1,8 @@
-<!DOCTYPE html>
 <html>
-  <head>
-    <title>Aurelia</title>
-  </head>
-  <body aurelia-app="src/main">
-    <script src="scripts/system.js"></script>
-    <script src="scripts/config-typescript.js"></script>
-    <script src="scripts/aurelia-core.min.js"></script>
-    <script>
-      System.import('aurelia-bootstrapper');
-    </script>
-  </body>
+    <link rel="stylesheet" href="dist/vendor.css" asp-append-version="true" />
+    <body>
+        <div aurelia-app="main"></div>
+    </body>
+    <script type="text/javascript" src="dist/vendor.js" asp-append-version="true"></script>
+    <script type="text/javascript" src="dist/app.js" asp-append-version="true"></script>
 </html>
