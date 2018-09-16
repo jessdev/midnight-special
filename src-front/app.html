@@ -1,9 +1,18 @@
 <template>
-  <require from="./nav-bar.html"></require>
-  
-  <nav-bar router.bind="router"></nav-bar>
+  <require from="./componets/nav-bar.html"></require>
+  <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+    <header class="masthead mb-auto">
+      <nav-bar router.bind="router"></nav-bar>
+    </header>
 
-  <div class="page-host">
-    <router-view></router-view>
+    <div role="main" class="inner cover page-host">
+      <router-view></router-view>
+    </div>
   </div>
+
+  <footer class="mastfoot mt-auto">
+    <div class="inner">
+      <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+    </div>
+  </footer>
 </template>
