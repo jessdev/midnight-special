@@ -4,8 +4,9 @@
   "description": "This is a guild website",
   "main": "main.js",
   "scripts": {
-    "build": "tsc",
-    "web-build": "node ./node_modules/",
+    "server-build": "node ./node_modules/typescript/bin/tsc --project ./src-back/tsconfig.json",
+    "web-build": "node ./node_modules/webpack/bin/webpack.js --configfile ./webpack.config.js",
+    "build": "npm run web-build && npm run server-build",
     "run": "npm run build && node ./dist/main.js"
   },
   "repository": {
@@ -56,7 +57,7 @@
     "clean-webpack-plugin": "^0.1.19",
     "es6-promise": "^4.2.4",
     "font-awesome": "4.7.0",
-    "isomorphic-fetch": "2.2.1",
+    "isomorphic-fetch": "^2.2.1",
     "jquery": "^3.3.1",
     "koa": "^2.5.2",
     "koa-static": "^5.0.0",

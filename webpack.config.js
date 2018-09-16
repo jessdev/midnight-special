@@ -26,7 +26,7 @@ module.exports = (env, argv) => {
       entry: { app: ["es6-promise/auto", "aurelia-bootstrapper"] },
       resolve: {
         extensions: [".ts", ".js"],
-        modules: ["src", "node_modules"],
+        modules: ["src-front", "node_modules"],
       },
       output: {
         path: path.resolve(bundleOutputDir),
@@ -42,7 +42,7 @@ module.exports = (env, argv) => {
           },
           {
             test: /\.ts$/i,
-            include: [/src/, /node_modules/],
+            include: [/src-front/, /node_modules/],
             use: "ts-loader",
           },
           { test: /\.html$/i, use: "html-loader" },
@@ -69,7 +69,7 @@ module.exports = (env, argv) => {
           //  // this is necessary for Istanbul to report coverage of Karma testing
           //  test: /\.[jt]s$/i,
           //  loader: "istanbul-instrumenter-loader",
-          //  include: path.resolve(__dirname, "src"),
+          //  include: path.resolve(__dirname, "src-front"),
           //  exclude: [/\.{spec,test}\.[jt]s$/i],
           //  enforce: "post",
           //  options: { esModules: true },
@@ -98,7 +98,7 @@ module.exports = (env, argv) => {
           moment: "moment",
         }),
         new AureliaPlugin({ aureliaApp: "main" }),
-        new GlobDependenciesPlugin({ main: ["src/**/*.{ts,html}"] }),
+        new GlobDependenciesPlugin({ main: ["src-front/**/*.{ts,html}"] }),
         new ModuleDependenciesPlugin({}),
         extractCSS,
       ],

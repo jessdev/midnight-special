@@ -20,5 +20,5 @@ app.use(async (ctx, next) => {
 
 // response
 app.use(serve('wwwroot'));
-
+console.log("Running on port 3000");
 app.listen(3000);
