@@ -1,10 +1,8 @@
 <template bindable="router">
-    <header class="masthead mb-auto">
-        <div class="inner">
-          <h3 class="masthead-brand">${router.title}</h3>
-          <nav class="nav nav-masthead justify-content-center" repeat.for="row of router.navigation" class="nav-item ${row.isActive ? 'active' : ''}">
+    <div class="inner">
+        <h3 class="masthead-brand">${router.title}</h3>
+        <nav class="nav nav-masthead justify-content-center" repeat.for="row of router.navigation" class="nav-item ${row.isActive ? 'active' : ''}">
             <a href.bind="row.href" class="nav-link">${row.title}</a>
-          </nav>
-        </div>
-      </header>
+        </nav>
+    </div>
 </template>
