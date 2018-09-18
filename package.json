@@ -7,7 +7,8 @@
     "server-build": "node ./node_modules/typescript/bin/tsc --project ./src-back/tsconfig.json",
     "web-build": "node ./node_modules/webpack/bin/webpack.js --configfile ./webpack.config.js",
     "build": "npm run web-build && npm run server-build",
-    "run": "npm run build && node ./dist/main.js"
+    "run": "npm run build && npm run serve",
+    "serve": "node ./dist/main.js"
   },
   "repository": {
     "type": "git",
