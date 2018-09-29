@@ -3,25 +3,26 @@
   <require from="./assets/app.css"></require>
 
   <body class="text-center">
+    <div class="home-page">
+      <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+        <header class="masthead mb-auto">
+          <nav-bar router.bind="router"></nav-bar>
+        </header>
 
-    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
-      <header class="masthead mb-auto">
-        <nav-bar router.bind="router"></nav-bar>
-      </header>
-
-      <div class="home-page">
-        <main role="main" class="inner cover page-host">
-          <router-view></router-view>
-        </main>
-      </div>
-
-      <footer class="mastfoot mt-auto">
-        <div class="inner">
-          <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.
-            Adapted to <a href="https://aurelia.io"> Aurelia</a>, by <a href="https://twitter.com/jlsdevriese">@jlsdevriese</a>
-          </p>
+        <div>
+          <main role="main" class="inner cover page-host">
+            <router-view></router-view>
+          </main>
         </div>
-      </footer>
+
+        <footer class="mastfoot mt-auto">
+          <div class="inner">
+            <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.
+              Adapted to <a href="https://aurelia.io"> Aurelia</a>, by <a href="https://twitter.com/jlsdevriese">@jlsdevriese</a>
+            </p>
+          </div>
+        </footer>
+      </div>
     </div>
   </body>
 </template>
