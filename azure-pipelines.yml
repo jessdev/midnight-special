@@ -16,3 +16,10 @@ steps:
     npm install
     npm run build
   displayName: 'npm install, run webpack'
+
+- archive:
+    path: 
+      - /dist
+      - /wwwroot
+    format: zip
+    dest: site.zip
