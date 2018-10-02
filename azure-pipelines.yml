@@ -30,7 +30,5 @@ steps:
 - task: ArchiveFiles@2
   displayName: 'Archive files'
   inputs:
-    Contents: |
-      dist/
-      wwwroot/
+    rootFolderOrFile: '$(System.DefaultWorkingDirectory)'
     includeRootFolder: false
