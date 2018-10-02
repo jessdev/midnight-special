@@ -24,19 +24,13 @@ steps:
     verbose: true
     customCommand: 'run build-prod'
 
-- task: CopyFiles@2
-  displayName: 'Copy Files to: $(System.DefaultWorkingDirectory)/deploy'
-  inputs:
-    SourceFolder: '$(System.DefaultWorkingDirectory)'
-    Contents: |
-     dist/
-     wwwroot/
-    TargetFolder: '$(System.DefaultWorkingDirectory)/deploy'
-    CleanTargetFolder: true
-    OverWrite: true
+- script: 'mkdir deploy' 
+  displayName: 'Command Line Script'
 
 - task: ArchiveFiles@2
   displayName: 'Archive files'
   inputs:
-    rootFolderOrFile: '$(System.DefaultWorkingDirectory)/deploy'
+    Contents: 
+      dist/
+      wwwroot/
     includeRootFolder: false
