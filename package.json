@@ -8,6 +8,8 @@
     "web-build": "node ./node_modules/webpack/bin/webpack.js --configfile ./webpack.config.js",
     "build": "npm run web-build && npm run server-build",
     "run": "npm run build && npm run serve",
+    "web-prod": "node ./node_modules/webpack/bin/webpack.js --configfile ./webpack.config.js --env.prod",
+    "build-prod": "npm run web-prod && npm run server-build",
     "serve": "node ./dist/main.js"
   },
   "repository": {

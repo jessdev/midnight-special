@@ -10,9 +10,33 @@ steps:
 - task: NodeTool@0
   inputs:
     versionSpec: '8.x'
-  displayName: 'Install Node.js'
 
-- script: |
-    npm install
-    npm run build
-  displayName: 'npm install, run webpack'
+  displayName: 'Install Node.js'
+- task: Npm@1
+  displayName: 'npm install'
+  inputs:
+    verbose: true
+
+- task: Npm@1
+  displayName: 'npm run build production build'
+  inputs:
+    command: custom
+    verbose: true
+    customCommand: 'run build-prod'
+
+- task: CopyFiles@2
+  displayName: 'Copy Files to: $(System.DefaultWorkingDirectory)/deploy'
+  inputs:
+    SourceFolder: '$(System.DefaultWorkingDirectory)'
+    Contents: |
+     dist/
+     wwwroot/
+    TargetFolder: '$(System.DefaultWorkingDirectory)/deploy'
+    CleanTargetFolder: true
+    OverWrite: true
+
+- task: ArchiveFiles@2
+  displayName: 'Archive files'
+  inputs:
+    rootFolderOrFile: '$(System.DefaultWorkingDirectory)/deploy'
+    includeRootFolder: false
