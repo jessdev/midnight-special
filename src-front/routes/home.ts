@@ -7,6 +7,6 @@ export class Home {
   public description: string;
   constructor(){
       this.name = "We are Midnight Special";
-      this.description = "We're only semi-profession in voice chat, but we're here to raid and run dungeons."
+      this.description = "We're only semi-professional in voice chat, but we're here to raid and run dungeons."
   }
 }
