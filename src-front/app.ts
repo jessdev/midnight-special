@@ -7,7 +7,7 @@ export class App {
   title: string;
 
   constructor(){
-    this.title = "Website1";
+    this.title = "Midnight Special";
   }
 
   configureRouter(config: RouterConfiguration, router: Router) {
