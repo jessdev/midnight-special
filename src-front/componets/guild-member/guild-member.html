@@ -1,0 +1,17 @@
+<template bindable="imagepath, quote, description">
+    <div>
+        <a class="portfolio-box">
+            <img src.bind="imagepath">
+            <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                    <div class="project-category text-faded">
+                        ${quote}
+                    </div>
+                    <div class="project-name">
+                        ${description}
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+</template>
