@@ -19,7 +19,8 @@ export class App {
     // ]);
     config.map([
       { route: ['', 'home'], name: 'home',moduleId: PLATFORM.moduleName('./routes/home'), nav: true, title: 'Home' },
-      { route: ['about'], name: 'about',moduleId: PLATFORM.moduleName('./routes/about'), nav: true, title: 'About' }
+      { route: ['about'], name: 'about',moduleId: PLATFORM.moduleName('./routes/about'), nav: true, title: 'About' },
+      { route: ['members'], name: 'members',moduleId: PLATFORM.moduleName('./routes/members'), nav: true, title: 'Members' }
     ]);
 
     this.router = router;
