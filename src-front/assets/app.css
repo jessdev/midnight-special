@@ -241,7 +241,7 @@ header.masthead p {
   text-align: center;
   opacity: 0;
   color: #fff;
-  background: rgba(240, 95, 64, 0.9);
+  background: rgba(117, 130, 150, 0.9);
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
