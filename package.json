@@ -24,6 +24,7 @@
   "license": "ISC",
   "homepage": "https://bitbucket.org/jessdev/guild-website#readme",
   "devDependencies": {
+    "@types/jquery": "^3.3.16",
     "@types/koa": "^2.0.46",
     "@types/koa-static": "^4.0.0",
     "@types/webpack-env": "^1.13.6",
@@ -34,6 +35,8 @@
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "file-loader": "^2.0.0",
     "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.9.3",
+    "sass-loader": "^7.1.0",
     "style-loader": "^0.23.0",
     "ts-loader": "^4.5.0",
     "typescript": "^3.0.3",

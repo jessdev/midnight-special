@@ -1,6 +1,8 @@
 import {Aurelia} from 'aurelia-framework';
 import {Router, RouterConfiguration} from 'aurelia-router';
 import {PLATFORM} from 'aurelia-pal';
+import 'bootstrap';
+import 'bootstrap/scss/bootstrap.scss';
 
 export class App {
   router: Router | undefined;

@@ -65,6 +65,8 @@ module.exports = (env, argv) => {
             issuer: [{ not: [{ test: /\.html$/i }] }],
             use: ["style-loader", cssLoader],
           },
+          { test: /\.scss$/i, issuer: /(\.html|empty-entry\.js)$/i, use: [cssLoader, "sass-loader"] },
+          { test: /\.scss$/i, issuer: /\.ts$/i, use: ["style-loader", cssLoader, "sass-loader"] }
           //{
           //  // this is necessary for Istanbul to report coverage of Karma testing
           //  test: /\.[jt]s$/i,
