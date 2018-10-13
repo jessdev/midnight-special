@@ -12,7 +12,7 @@
                     We would love for you to join our raids. Feel free to catch us on the Darkspear server.
             </div>
         </div>
-        <br/>
+        <br />
         <div class="row">
             <div class="col-lg-8 mx-auto text-center">
                 <h2 class="section-heading text-white">Midnight Special Members</h2>
@@ -23,6 +23,16 @@
         <div class="row">
             <div repeat.for="member of memberList">
                 <guild-member-view member.bind="member"></guild-member-view>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h2 class="section-heading text-white">Guild Statistics</h2>
+                <hr class="light my-4">
+                <p class="text-faded mb-4">
+                    <a href="https://www.warcraftlogs.com/guild/us/darkspear/midnight%20special">Warcraft Logs</a>
+                </p>
             </div>
         </div>
 </template>
