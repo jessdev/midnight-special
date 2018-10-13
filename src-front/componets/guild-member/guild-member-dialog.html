@@ -1,13 +1,15 @@
 <template>
+    <require from="./guild-member-dialog.css"></require>
     <ux-dialog>
-        <ux-dialog-body>
-            <h2>Edit first name</h2>
-            <p value.bind="member.name"></p>
-        </ux-dialog-body>
+        <ux-dialog-header>
+            <h1>${member.name}</h2>
+            <h3>${member.race} - ${member.className}</h3>
+        </ux-dialog-header>
 
-        <ux-dialog-footer>
-            <button click.trigger="controller.cancel()">Cancel</button>
-            <button click.trigger="controller.ok(member)">Ok</button>
-        </ux-dialog-footer>
+        <ux-dialog-body>
+            <h3 class="quote">${member.quote}</h3>
+            <br/>
+            <p>${member.description}</p>
+        </ux-dialog-body>
     </ux-dialog>
 </template>

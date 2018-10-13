@@ -1,5 +1,12 @@
 export class GuildMember{
-    constructor(public name: string, public role: string, public imagepath: string, public description: string, public quote: string){
+    constructor(
+        public name: string, 
+        public role: string, 
+        public imagepath: string, 
+        public description: string, 
+        public quote: string,
+        public race: string,
+        public className: string){
 
     }
 }

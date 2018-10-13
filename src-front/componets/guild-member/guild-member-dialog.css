@@ -1,0 +1,13 @@
+ux-dialog {
+    background-color: #212529;
+    color: #fff;
+    max-width: 550px;
+}
+
+ux-dialog-header {
+    text-align: center;
+}
+
+.quote {
+    font-style: italic;
+}

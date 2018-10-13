@@ -16,6 +16,7 @@ export class GuildMemberView {
     }
 
     public readMore(){
+      console.log(this.member)
         this.dialogService.open({ viewModel: GuildMemberDialog, model: this.member, lock: false }).whenClosed(response => {
             if (!response.wasCancelled) {
               console.log('good - ', response.output);
