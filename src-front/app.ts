@@ -24,8 +24,6 @@ export class App {
 
     @computedFrom('router.currentInstruction.config.name')
     get isHome(): boolean {
-      console.log(this.router!.currentInstruction.config.name);
-      console.log(this.router!.currentInstruction.config.name === 'home');
       return (this.router!.currentInstruction.config.name === 'home');
     }
   

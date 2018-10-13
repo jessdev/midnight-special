@@ -1,5 +1,5 @@
 <template>
-    <require from="../componets/guild-member/guild-member"></require>
+    <require from="../componets/guild-member/guild-member-view"></require>
     <div class="section">
         <div class="row">
             <div class="col-lg-8 mx-auto text-center">
@@ -22,7 +22,7 @@
 
         <div class="row">
             <div repeat.for="member of memberList">
-                <guild-member imagepath.bind="member.imagepath" quote.bind="member.quote" description.bind="member.description"></guild-member>
+                <guild-member-view member.bind="member"></guild-member-view>
             </div>
         </div>
 </template>

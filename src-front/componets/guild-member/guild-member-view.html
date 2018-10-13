@@ -1,14 +1,14 @@
-<template bindable="imagepath, quote, description">
-    <div>
+<template>
+    <div click.delegate="readMore()">
         <a class="portfolio-box">
-            <img src.bind="imagepath">
+            <img src.bind="member.imagepath">
             <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                     <div class="project-category text-faded">
-                        ${quote}
+                        ${member.name}
                     </div>
                     <div class="project-name">
-                        ${description}
+                        ${member.role}
                     </div>
                 </div>
             </div>
