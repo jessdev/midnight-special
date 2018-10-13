@@ -1,12 +1,10 @@
 <template>
-        <require from="../componets/guild-member/guild-member"></require>
-    <section>
-        <div class="container">
-            <div class="row">
-                <div repeat.for="member of memberList" >
-                        <guild-member imagepath.bind="member.imagepath" quote.bind="member.quote" description.bind="member.description"></guild-member>
-                </div>
+    <require from="../componets/guild-member/guild-member"></require>
+    <div class="section">
+        <div class="row">
+            <div repeat.for="member of memberList">
+                <guild-member imagepath.bind="member.imagepath" quote.bind="member.quote" description.bind="member.description"></guild-member>
             </div>
         </div>
-    </section>
+        </section>
 </template>

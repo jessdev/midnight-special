@@ -3,16 +3,24 @@
   <require from="./assets/app.css"></require>
 
   <div>
-    <nav-bar router.bind="router" title.bind="title"></nav-bar>
-    <div>
-      <main role="main">
-        <router-view></router-view>
-      </main>
-    </div>
-    <footer class="app-footer mt-auto">
-      <div class="inner">
-        <p>A Midnight Special Website 2018</p>
+
+
+    <div class="${isHome ? 'on-homepage' : ''}">
+      <div class="container">
+
+        <nav-bar router.bind="router" title.bind="title"></nav-bar>
+        <main role="main">
+          <router-view></router-view>
+        </main>
       </div>
-    </footer>
+
+      <footer class="app-footer mt-auto">
+        <div class="inner">
+          <p>A Midnight Special Website 2018</p>
+        </div>
+      </footer>
+    </div>
+
+
   </div>
 </template>
