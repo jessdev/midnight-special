@@ -142,6 +142,8 @@ img::-moz-selection {
   background-color: transparent;
 }
 
+/* Nav Bar */
+
 @media (min-width: 992px) {
   #mainNav {
     border-color: transparent;
@@ -210,6 +212,8 @@ div.masthead p {
   font-weight: 300;
 }
 
+/* Responsive Page */
+
 @media (min-width: 768px) {
   div.masthead p {
     font-size: 1.15rem;
@@ -218,7 +222,6 @@ div.masthead p {
 
 @media (min-width: 992px) {
   div.masthead {
-    /*height: 100vh;*/
     min-height: 650px;
     padding-top: 0;
     padding-bottom: 0;
@@ -237,6 +240,8 @@ div.masthead p {
 .service-box {
   max-width: 400px;
 }
+
+/* Member Boxes */
 
 .portfolio-box {
   position: relative;
@@ -275,14 +280,14 @@ div.masthead p {
 }
 
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
-  font-size: 16px;
+  font-size: 1.5rem;
   font-style: italic;
   font-weight: 600;
   text-transform: uppercase;
 }
 
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
-  font-size: 12px;
+  font-size: 1.25rem;
 }
 
 .portfolio-box:hover .portfolio-box-caption {
