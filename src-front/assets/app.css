@@ -99,6 +99,8 @@ img::-moz-selection {
   background: transparent;
 }
 
+/* Nav Bar */
+
 #mainNav {
   border-bottom: 1px solid rgba(33, 37, 41, 0.1);
   background-color: #212529;
@@ -142,8 +144,6 @@ img::-moz-selection {
   background-color: transparent;
 }
 
-/* Nav Bar */
-
 @media (min-width: 992px) {
   #mainNav {
     border-color: transparent;
@@ -186,12 +186,32 @@ img::-moz-selection {
   }
 }
 
-.on-homepage{
+@media (max-width: 400px) {
+  #mainNav .navbar-brand  {
+    font-size: 1.5rem;
+  }
+
+  #mainNav .navbar-nav > li.nav-item > a.nav-link {
+    font-size: 1.4rem;
+  }
+}
+
+/* Home Page */
+
+.on-homepage {
   background-image: url("./belfs-chilling.png");
   background-position: center center;
   background-size: cover;
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
+}
+
+@media (max-width: 992px) {
+  .on-homepage {
+    background-image: url("./mobile-home.png");
+    background-position: top top;
+    background-size: cover;
+  }
 }
 
 div.masthead {
