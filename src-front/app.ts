@@ -16,7 +16,8 @@ export class App {
     config.title = this.title;
     config.map([
       { route: ['', 'home'], name: 'home',moduleId: PLATFORM.moduleName('./routes/home'), nav: true, title: 'Home' },
-      { route: ['about'], name: 'about',moduleId: PLATFORM.moduleName('./routes/about'), nav: true, title: 'About' }
+      { route: ['about'], name: 'about',moduleId: PLATFORM.moduleName('./routes/about'), nav: true, title: 'About' },
+      { route: ['calendar'], name: 'calendar' , moduleId: PLATFORM.moduleName('./routes/calendar'), nav: true, title: 'Calendar' }
     ]);
 
     this.router = router;
