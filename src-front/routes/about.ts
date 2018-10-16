@@ -6,6 +6,23 @@ export class About {
     public memberList: GuildMember[];
     constructor() {
         this.memberList = [
+            new GuildMember('Archmender',
+            'Guild Master - Healer',
+            'images/thumb.png',
+            "Archmender is the self-loathing Highmountain Tauren Druid of Midnight Special. "+
+            "Some say in his 10+ years of playing WoW, he’s never once left the Resto spec nor said “for the Horde!” He’s the much-hated raid leader / healer combo with an affinity for a damn good omelette.", 
+            '"Wait, we killed the heart?!?” Indiscernible cursing and grunting “Fuuuuuu, cooldowns Kirk!"',
+            "Tauren",
+            "Shaman"
+            ),
+            new GuildMember('Khazit',
+            'Guild Master - Tank',
+            'images/thumb.png',
+            "Khazit, Blood Death Knight and often main tank. Archmender's twin, but not by choice.",
+            '"I drank, a lot. I guarantee you I didn\'t do shit while drunk though"',
+            "Goblin",
+            "Death Knight"
+            ),
             new GuildMember('Thisisur',
             'Guild Social Chair - Tank',
             'images/thisisur-thumb.png',
@@ -21,15 +38,6 @@ export class About {
             '"Oh.... I used halo again."',
             "Forsaken",
             "Priest"
-            ),
-            new GuildMember('Cerules',
-            'Guild Master - Healer',
-            'images/place-holder.png',
-            "Archmender is the self-loathing Highmountain Tauren Druid of Midnight Special. "+
-            "Some say in his 10+ years of playing WoW, he’s never once left the Resto spec nor said “for the Horde!” He’s the much-hated raid leader / healer combo with an affinity for a damn good omelette.", 
-            '"Wait, we killed the heart?!?” Indiscernible cursing and grunting “Fuuuuuu, cooldowns Kirk!"',
-            "Tauren",
-            "Shaman"
             )
         ];
     }
