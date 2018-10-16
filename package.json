@@ -6,6 +6,7 @@
   "scripts": {
     "server-build": "node ./node_modules/typescript/bin/tsc --project ./src-back/tsconfig.json",
     "web-build": "node ./node_modules/webpack/bin/webpack.js --configfile ./webpack.config.js",
+    "web-watch": "node ./node_modules/webpack/bin/webpack.js --configfile ./webpack.config.js --watch",
     "build": "npm run web-build && npm run server-build",
     "run": "npm run build && npm run serve",
     "web-prod": "node ./node_modules/webpack/bin/webpack.js --configfile ./webpack.config.js --env.prod",

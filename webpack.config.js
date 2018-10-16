@@ -13,6 +13,7 @@ const bundleOutputDir = "./app/dist";
 
 module.exports = (env, argv) => {
   const isDevBuild = !(env && env.prod);
+  const isWatching = !(env && env.watch);
   if (isDevBuild) {
     console.log("webpack is dev build");
   }
@@ -22,6 +23,11 @@ module.exports = (env, argv) => {
   return [
     {
       target: "web",
+      watch: isWatching,
+      watchOptions: {
+        aggregateTimeout: 300,
+        poll: 1000
+      },
       mode: isDevBuild ? "development" : "production",
       entry: { app: ["es6-promise/auto", "aurelia-bootstrapper"] },
       resolve: {
