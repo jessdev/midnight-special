@@ -21,6 +21,15 @@ export class About {
             '"Oh.... I used halo again."',
             "Forsaken",
             "Priest"
+            ),
+            new GuildMember('Cerules',
+            'Guild Master - Healer',
+            'images/place-holder.png',
+            "Archmender is the self-loathing Highmountain Tauren Druid of Midnight Special. "+
+            "Some say in his 10+ years of playing WoW, he’s never once left the Resto spec nor said “for the Horde!” He’s the much-hated raid leader / healer combo with an affinity for a damn good omelette.", 
+            '"Wait, we killed the heart?!?” Indiscernible cursing and grunting “Fuuuuuu, cooldowns Kirk!"',
+            "Tauren",
+            "Shaman"
             )
         ];
     }
