@@ -13,9 +13,12 @@ const bundleOutputDir = "./app/dist";
 
 module.exports = (env, argv) => {
   const isDevBuild = !(env && env.prod);
-  const isWatching = !(env && env.watch);
+  const isWatching = (env && env.watch);
   if (isDevBuild) {
     console.log("webpack is dev build");
+  }
+  if(isWatching){
+    console.log("webpack is watching");
   }
   const cssLoader = {
     loader: isDevBuild ? "css-loader" : "css-loader?minimize",
