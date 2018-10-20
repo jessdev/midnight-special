@@ -38,6 +38,14 @@ export class About {
             '"Oh.... I used halo again."',
             "Forsaken",
             "Priest"
+            ),
+            new GuildMember('Spectre Ash',
+            'Member - Melee DPS',
+            'images/spacetrash-thumb.png',
+            "placeholder", 
+            '"Oh... I was using my aoe on this one dude."',
+            "Blood Elf",
+            "Demon Hunter"
             )
         ];
     }
