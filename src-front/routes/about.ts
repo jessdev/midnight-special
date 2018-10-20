@@ -17,7 +17,7 @@ export class About {
             ),
             new GuildMember('Khazit',
             'Guild Master - Tank',
-            'images/thumb.png',
+            'images/khazit-thumb.png',
             "Khazit, Blood Death Knight and often main tank. Archmender's twin, but not by choice.",
             '"I drank, a lot. I guarantee you I didn\'t do shit while drunk though"',
             "Goblin",
