@@ -39,6 +39,14 @@ export class About {
             "Forsaken",
             "Priest"
             ),
+            new GuildMember('Sonja',
+            'Memeber - DPS',
+            'images/sonja-thumb.png',
+            "Sonja is a Death Knight who focus on fighting at the front lines.", 
+            '"Go."',
+            "Troll",
+            "Death Knight"
+            ),
             new GuildMember('Spectre Ash',
             'Member - Melee DPS',
             'images/spacetrash-thumb.png',
