@@ -6,7 +6,7 @@ export class NavBar {
     @bindable router: Router | undefined;
     @bindable title: string | undefined;
     constructor() {
-
+        $(window).scroll(this.navbarCollapse);
     }
     public navbarCollapse = function () {
         if ($("#mainNav").offset()!.top > 100) {

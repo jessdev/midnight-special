@@ -168,13 +168,13 @@ img::-moz-selection {
   }
   #mainNav.navbar-shrink {
     border-bottom: 1px solid rgba(33, 37, 41, 0.1);
-    background-color: #fff;
+    background-color: #212529;
   }
   #mainNav.navbar-shrink .navbar-brand {
-    color: #ffff4d;
+    color: #fff;
   }
   #mainNav.navbar-shrink .navbar-brand:focus, #mainNav.navbar-shrink .navbar-brand:hover {
-    color: #ffff4d;
+    color: #fff;
   }
   #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link,
   #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus {
@@ -182,7 +182,7 @@ img::-moz-selection {
   }
   #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:hover,
   #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus:hover {
-    color: #ffff4d;
+    color: #fff;
   }
 }
 
